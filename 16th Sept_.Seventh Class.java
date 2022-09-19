@@ -249,8 +249,7 @@ CODE:
 
 
 class Tesla
-{
-    // Parent Class Method is Overridden -> Method Overriding
+{    
     final void run()
     {
         System.out.println("Tesla Running");        
@@ -285,7 +284,7 @@ After Inheritance:
 
 class Model extends Tesla
 {
-	// Parent Class Method is Overridden -> Method Overriding
+    // final methods are NOT Overridden but they are Inherited
     final void run()
     {
         System.out.println("Tesla Running");        
@@ -320,7 +319,6 @@ Hence, final Methods are NOT Allowed to Override
 
 class Tesla
 {
-    // Parent Class Method is Overridden -> Method Overriding
     final void run()
     {
         System.out.println("Tesla Running");        
@@ -438,7 +436,71 @@ Definition: Assigning Value
 
 int a ; // Declaration
 a = 10; // Definition
+
 int a = 10; // Declaration + Definition
+
+
+
+
+
+(5) How to Initialise Blank final variable?
+- ONLY be Initialised inside Constructor
+
+
+
+
+CODE:
+
+
+class Tesla
+{
+    // Blank final variable
+    final int speedLimit;
+    
+    Tesla()
+    {
+        speedLimit = 100;
+    }
+}
+
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        Tesla t = new Tesla();
+        System.out.println("Speed Limit: " + t.speedLimit);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
