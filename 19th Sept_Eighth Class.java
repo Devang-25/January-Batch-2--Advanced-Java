@@ -160,6 +160,13 @@ pkg:
 
 
 
+pkg1
+    - A.java
+
+pkg2
+    - B.java
+
+
 A.java
 
 public class A
@@ -176,7 +183,7 @@ class A_1
 
 B.java
 
-import pkg/A
+import pkg1/A
 
 public class B
 {
@@ -744,7 +751,7 @@ class Tesla
 
 class Model extends Tesla
 {
-     void print()
+    void print()
     {
         System.out.println("Inside Child");        
     }        
@@ -836,7 +843,7 @@ class Tesla
 
 class Model extends Tesla
 {
-     protected void print()
+    protected void print()
     {
         System.out.println("Inside Child");        
     }        
