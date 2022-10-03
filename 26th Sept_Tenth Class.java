@@ -124,6 +124,7 @@ Average: 2-3
 
 Target: 9-10
 
+Achieved: 8-9
 
 - Structured Query Language
 - Access and Manipulate DB
